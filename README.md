@@ -37,6 +37,8 @@ export fn main() void {
 }
 ```
 
+Or use this [repo](https://github.com/SimoneFelici/zig-c64-baseline) as a baseline for the project
+
 ## Contents
 
 | Name | Type | Address | Description |
