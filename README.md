@@ -53,4 +53,4 @@ export fn main() void {
 
 ## Credits and license
 
-The register layouts are translated from llvm-mos-sdk (Apache License 2.0 with LLVM Exceptions), which in turn are originally from [cc65](https://github.com/cc65/cc65) by Ullrich von Bassewitz (zlib license). These are modified versions, translated from C to Zig; the original notices are kept in each source file.
+The register layouts are translated from [llvm-mos-sdk](https://github.com/llvm-mos/llvm-mos-sdk)
