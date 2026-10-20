@@ -1,6 +1,6 @@
 # c64-zig
 
-Commodore 64 definitions in Zig.
+Commodore 64 hardware definitions in Zig.
 
 A Zig translation of the C64 headers from [llvm-mos-sdk](https://github.com/llvm-mos/llvm-mos-sdk) (`c64.h`, `_vic2.h`, `_sid.h`, `_6526.h`).
 
