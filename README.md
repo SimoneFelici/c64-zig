@@ -11,18 +11,23 @@ A Zig translation of the C64 headers from [llvm-mos-sdk](https://github.com/llvm
 
 ## Installation
 
-```sh
+Add the dependency:
+```bash
 zig fetch --save git+https://github.com/SimoneFelici/c64-zig
 ```
 
-In `build.zig`:
-
+Import it in `build.zig`:
 ```zig
 const c64_dep = b.dependency("c64_zig", .{});
 exe.root_module.addImport("c64", c64_dep.module("c64"));
 ```
 
-## Usage
+Then use it:
+```zig
+const c64 = @import("c64");
+```
+
+## Example
 
 ```zig
 const std = @import("std");
