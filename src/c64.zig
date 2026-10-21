@@ -57,3 +57,9 @@ pub const cia2: *volatile @import("cia.zig").Cia = @ptrFromInt(0xDD00);
 
 // Special memory areas
 pub const color_ram: [*]volatile u8 = @ptrFromInt(0xD800);
+
+// CBM system-specific definitions and KERNAL functions
+pub const cbm = @import("cbm.zig");
+
+// Compile-time Unicode to PETSCII and screen code conversion
+pub const charset = @import("charset.zig");
