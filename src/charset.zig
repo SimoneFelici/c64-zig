@@ -52,7 +52,7 @@ fn len(comptime s: []const u8) usize {
 }
 
 fn convert(comptime s: []const u8, comptime table: []const Entry, comptime c0: bool) *const [len(s):0]u8 {
-    comptime {
+    return comptime blk: {
         @setEvalBranchQuota(1000 + s.len * 1000);
         var out: [len(s):0]u8 = undefined;
         var it = std.unicode.Utf8View.initComptime(s).iterator();
@@ -62,8 +62,8 @@ fn convert(comptime s: []const u8, comptime table: []const Entry, comptime c0: b
         }
         out[out.len] = 0;
         const final = out;
-        return &final;
-    }
+        break :blk &final;
+    };
 }
 
 fn translate(comptime cp: u21, comptime table: []const Entry, comptime c0: bool) u8 {
