@@ -2,10 +2,11 @@
 
 Commodore 64 hardware definitions in Zig.
 
-A Zig translation of the C64 headers from [llvm-mos-sdk](https://github.com/llvm-mos/llvm-mos-sdk) (`c64.h`, `_vic2.h`, `_sid.h`, `_6526.h`).
+A Zig translation of the C64 headers from [llvm-mos-sdk](https://github.com/llvm-mos/llvm-mos-sdk) (`c64.h`, `_vic2.h`, `_sid.h`, `_6526.h`, `cbm.h`, `charset.h`).
 
 ## Requirements
 
+- zig 0.17.0
 - [zig-mos-bootstrap](https://github.com/kassane/zig-mos-bootstrap) 0.17.0
 - The C64 target `.cpu_arch = .mos, .os_tag = .c64)`
 
